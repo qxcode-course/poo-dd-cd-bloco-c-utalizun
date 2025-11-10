@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-03_19-02-46",
+            "content": "@@ -1,326 +0,0 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0Alista_vazia: list%5Bint%5D = %5B%5D%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preencida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Alista_vazia.append(1)%0Alista_preenchida.append(Foo(6))%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-03_19-06-19",
+            "content": "@@ -1,54 +1,326 @@\n c\n-ores = %5B 'azul', 'vermelho', 'amarelo'%5D%0Aprint (cores)\n+lass Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0Alista_vazia: list%5Bint%5D = %5B%5D%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preencida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Alista_vazia.append(1)%0Alista_preenchida.append(Foo(6))%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-03_19-17-13",
+            "content": "@@ -50,8 +50,5 @@\n ores\n-%5B1%5D\n )\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-11-03_19-17-31",
+            "content": "@@ -46,9 +46,12 @@\n t (cores\n+%5B1%5D\n )\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-11-03_19-18-08",
+            "content": "@@ -51,25 +51,4 @@\n res)\n-%0Acores.append(%22rosa%22)\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-11-03_19-19-38",
+            "content": "@@ -72,12 +72,4 @@\n sa%22)\n-%0Aprint()\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-03_19-19-57",
+            "content": "@@ -75,14 +75,9 @@\n )%0Aprint(\n-cores\n )\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-03_19-20-06",
+            "content": "@@ -85,74 +85,4 @@\n res)\n-%0A%0Aletras = %5B%22C%22,%22a%22,%22j%22,%22u%22%5D%0Apalavra = %22%22.join(letras)%0Aprint (palavra)\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-03_19-24-01",
+            "content": "@@ -125,9 +125,8 @@\n  = %22\n--\n %22.jo\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-11-03_19-24-20",
+            "content": "@@ -1,158 +1,720 @@\n-cores = %5B 'azul', 'vermelho', 'amarelo'%5D%0Aprint (cores)%0Acores.append(%22rosa%22)%0Aprint(cores)%0A%0Aletras = %5B%22C%22,%22a%22,%22j%22,%22u%22%5D%0Apalavra = %22%22.join(letras)%0Aprint (palavra)\n+@@ -1,12 +1,32 @@%0A+@@ -1,159 +1,52 @@%250A-%0A cores = %0A %255B 'a%0A@@ -21,17 +21,19 @@%0A cores = %0A-%255B%0A+%25255B%0A  'azul',%0A@@ -54,18 +54,22 @@%0A amarelo'%0A-%255D%250A%0A+%25255D%25250A%0A print (c%0A@@ -73,17 +73,19 @@%0A  (cores)%0A-%250A%0A+%25250A%0A cores.ap%0A@@ -93,16 +93,22 @@%0A end(%0A-%2522%0A+%252522%0A rosa%0A-%2522)%250A%0A+%252522)%25250A%0A prin%0A@@ -119,10 +119,14 @@%0A res)%0A-%250A%250A%0A+%25250A%25250A%0A letr%0A@@ -134,26 +134,48 @@%0A s = %0A-%255B%2522C%2522,%2522a%2522,%2522j%2522,%2522u%2522%255D%250A%0A+%25255B%252522C%252522,%252522a%252522,%252522j%252522,%252522u%252522%25255D%25250A%0A pala%0A@@ -184,11 +184,15 @@%0A a = %0A-%2522 %2522%0A+%252522 %252522%0A .joi%0A@@ -200,17 +200,19 @@%0A (letras)%0A-%250A%0A+%25250A%0A print (p%0A@@ -218,8 +218,77 @@%0A palavra)%0A+%250A+@@ -121,17 +121,17 @@%25250A avra = %25252522%25250A- %25250A+-%25250A %25252522.join(l%25250A%250A%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-03_19-25-20",
+            "content": "cores = [ 'azul', 'vermelho', 'amarelo']\nprint (cores)\ncores.append(\"rosa\")\nprint(cores)\n\nletras = [\"C\",\"a\",\"j\",\"u\"]\npalavra = \"\".join(letras)\nprint (palavra)",
+            "lines": "8"
+        }
+    ]
+}

@@ -52,8 +52,23 @@
         },
         {
             "label": "2025-11-03_19-25-20",
-            "content": "cores = [ 'azul', 'vermelho', 'amarelo']\nprint (cores)\ncores.append(\"rosa\")\nprint(cores)\n\nletras = [\"C\",\"a\",\"j\",\"u\"]\npalavra = \"\".join(letras)\nprint (palavra)",
+            "content": "@@ -1,662 +1,158 @@\n c\n-lass Pessoa:%0A    def __init__(self, nome: str):%0A        self.nome = nome%0A    def __str__(self):%0A        return self.nome%0Aclass Budega:%0A    def __init__(self, num_caixas:int):%0A        self.caixas: list%5BPessoa%7CNone%5D = %5B%5D%0A        for _ in range(num_caixas):%0A            self.caixas.append(None)%0A        self.espera: list %5BPessoa%5D = %5B%5D%0A    def __str__(self):%0A        caixas = %22,%22.join(%5Bstr(x) for x in self.caixas%5D) # type: ignore%0A        espe\n+ores = %5B 'azul', 'vermelho', 'amarelo'%5D%0Aprint (cores)%0Acores.append(%22rosa%22)%0Aprint(cores)%0A%0Aletras = %5B%22C%22,%22a%22,%22j%22,%22u%22%5D%0Apalav\n ra = %22\n-,\n %22.join(\n-%5Bstr(x) for x in self.espera%5D) # type: ignore%0A        return f%22Caixas:%7Bcaixas%7D%5CnEspera:%7Bespera%7D%22%0A    %0A%0A%0Apessoa = Pessoa(%22Maria%22\n+letras\n )%0Aprint\n+ \n (p\n-essoa)%0Abud = Budega(3)%0Abud.espera.append(pessoa)%0Aprint(bud)%0A%0A%0A%0A         \n+alavra)\n",
             "lines": "8"
+        },
+        {
+            "label": "2025-11-10_23-16-50",
+            "content": "@@ -1,123 +1,222 @@\n+@@ -1,17 +1,20 @@%0A \n class \n+%0A-\n Foo\n-:%0A    def __init__(se\n+%0A+Pessoa%0A :%250A    de%0A@@ -34,14 +34,17 @@%0A \n lf, \n+%0A-\n x: int\n-):%0A        s\n+%0A+nome: str%0A ):%250A %0A@@ -59,14 +59,19 @@%0A \n elf.\n+%0A-\n x = x\n-%0A%0A    def __str__(self):%0A        ret\n+%250A%0A+nome = nome%0A %250A   %0A@@ -109,228 +109,554 @@%0A \n urn \n+%0A-\n f'Foo(\n-%7B\n+%257B\n self.x\n-%7D)'%0A%0A\n+%257D)'%250A%250A\n list\n@@ -232,19 +232,29 @@\n list\n-%5Bint%5D = %5B%5D%0A\n+%255Bint%255D = %255B%255D%250A\n list\n@@ -275,17 +275,23 @@\n list\n-%5Bint%5D = %5B\n+%255Bint%255D = %255B\n 1, 2\n@@ -299,18 +299,22 @@\n  3, 4, 5\n-%5D%0A\n+%255D%250A\n lista_pr\n@@ -338,17 +338,23 @@\n list\n-%5BFoo%5D = %5B\n+%255BFoo%255D = %255B\n Foo(\n@@ -391,11 +391,17 @@\n o(5)\n-%5D%0A%0A\n+%255D%250A%250A\n list\n@@ -417,17 +417,19 @@\n ppend(1)\n-%0A\n+%250A\n lista_pr\n@@ -451,8 +451,657 @@\n (Foo(6))\n+%0A+self.nome%250Aclass Budega:%250A    def __init__(self, num_caixas:int):%250A        self.caixas: list%255BPessoa%257CNone%255D = %255B%255D%250A        for _ in range(num_caixas):%250A            self.caixas.append(None)%250A        self.espera: list %255BPessoa%255D = %255B%255D%250A    def __str__(self):%250A        caixas = %2522,%2522.join(%255Bstr(x) for x in self.caixas%255D) # type: ignore%250A        espera = %2522,%2522.join(%255Bstr(x) for x in self.espera%255D) # type: ignore%250A        return f%2522Caixas:%257Bcaixas%257D%255CnEspera:%257Bespera%257D%2522%250A    %250A%250A%250Apessoa = Pessoa(%2522Maria%2522)%250Aprint(pessoa)%250Abud = Budega(3)%250Abud.espera.append(pessoa)%250Aprint(bud)%250A%250A%250A%250A         %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-11_00-46-00",
+            "content": "@@ -287,8 +287,39 @@\n pend(1)%0A\n+lista_preenchida.append(Foo(6))\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-11_00-46-11",
+            "content": "class Foo:\n    def __init__(self, x: int):\n        self.x = x\n\n    def __str__(self):\n        return f'Foo({self.x})'\n\nlista_vazia: list[int] = []\nlista_preenchida: list[int] = [1, 2, 3, 4, 5]\nlista_preencida_objetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\n\nlista_vazia.append(1)\n",
+            "lines": "12"
         }
     ]
 }

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-15_01-34-31",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.nome = nome\n    def __str__(self):\n        return self.nome\n    \n    ",
+            "lines": "7"
+        }
+    ]
+}

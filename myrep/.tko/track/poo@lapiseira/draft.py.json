@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-15_01-31-57",
+            "content": "class Lapiseira:\n    def __init__(self) -> None:\n        self.teste = 0\n\nlapis = Lapiseira\nprint(lapis)",
+            "lines": "6"
+        }
+    ]
+}

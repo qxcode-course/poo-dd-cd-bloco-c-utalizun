@@ -40,3 +40,19 @@
 2025-11-15 01:35:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
 2025-11-15 01:35:39, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
 2025-11-15 01:35:40, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-15 20:31:36, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-15 20:31:37, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-15 20:31:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-15 20:31:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-15 20:31:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-15 20:31:44, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-15 20:32:11, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-15 20:32:12, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:37
+2025-11-15 20:32:12, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:37
+2025-11-15 20:32:12, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:37
+2025-11-15 20:32:13, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-15 20:32:13, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-15 20:32:14, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-15 20:32:15, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-15 20:32:34, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-15 20:32:35, EXEC, v:1, k:poo@budega, mode:FULL, rate:0

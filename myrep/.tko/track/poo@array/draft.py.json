@@ -67,7 +67,17 @@
         },
         {
             "label": "2025-11-11_00-46-11",
-            "content": "class Foo:\n    def __init__(self, x: int):\n        self.x = x\n\n    def __str__(self):\n        return f'Foo({self.x})'\n\nlista_vazia: list[int] = []\nlista_preenchida: list[int] = [1, 2, 3, 4, 5]\nlista_preencida_objetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\n\nlista_vazia.append(1)\n",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,295 +1,51 @@%0A-\n class Fo\n@@ -23,17 +23,19 @@\n ass Foo:\n-%0A\n+%250A\n     def \n@@ -57,17 +57,19 @@\n x: int):\n-%0A\n+%250A\n         \n@@ -78,18 +78,22 @@\n lf.x = x\n-%0A%0A\n+%250A%250A\n     def \n@@ -106,17 +106,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -134,20 +134,28 @@\n Foo(\n-%7B\n+%257B\n self.x\n-%7D)'%0A%0A\n+%257D)'%250A%250A\n list\n@@ -171,19 +171,29 @@\n list\n-%5Bint%5D = %5B%5D%0A\n+%255Bint%255D = %255B%255D%250A\n list\n@@ -214,17 +214,23 @@\n list\n-%5Bint%5D = %5B\n+%255Bint%255D = %255B\n 1, 2\n@@ -238,18 +238,22 @@\n  3, 4, 5\n-%5D%0A\n+%255D%250A\n lista_pr\n@@ -277,17 +277,23 @@\n list\n-%5BFoo%5D = %5B\n+%255BFoo%255D = %255B\n Foo(\n@@ -330,12 +330,18 @@\n o(5)\n-%5D%0Al%0A\n+%255D%250Al%250A\n list\n@@ -358,8 +358,77 @@\n pend(1)%0A\n++@@ -264,17 +264,16 @@%250A Foo(5)%25255D%25250A%250A-l%250A %25250Alista_v%0A %250A%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-17_18-05-09",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,298 +1,44 @@%0A-\n class Fo\n@@ -23,17 +23,19 @@\n ass Foo:\n-%0A\n+%250A\n     def \n@@ -57,17 +57,19 @@\n x: int):\n-%0A\n+%250A\n         \n@@ -78,18 +78,22 @@\n lf.x = x\n-%0A%0A\n+%250A%250A\n     def \n@@ -106,17 +106,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -134,20 +134,28 @@\n Foo(\n-%7B\n+%257B\n self.x\n-%7D)'%0A%0A\n+%257D)'%250A%250A\n list\n@@ -171,19 +171,29 @@\n list\n-%5Bint%5D = %5B%5D%0A\n+%255Bint%255D = %255B%255D%250A\n list\n@@ -214,17 +214,23 @@\n list\n-%5Bint%5D = %5B\n+%255Bint%255D = %255B\n 1, 2\n@@ -238,18 +238,22 @@\n  3, 4, 5\n-%5D%0A\n+%255D%250A\n lista_pr\n@@ -277,17 +277,23 @@\n list\n-%5BFoo%5D = %5B\n+%255BFoo%255D = %255B\n Foo(\n@@ -330,15 +330,21 @@\n o(5)\n-%5D%0A\n+%255D%250A\n llbb\n-%0A\n+%250A\n list\n@@ -361,8 +361,70 @@\n pend(1)%0A\n++@@ -269,11 +269,8 @@%250A )%25255D%25250Al%250A-lbb%250A %25250Alis%0A %250A%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-17_18-05-16",
+            "content": "class Foo:\n    def __init__(self, x: int):\n        self.x = x\n\n    def __str__(self):\n        return f'Foo({self.x})'\n\nlista_vazia: list[int] = []\nlista_preenchida: list[int] = [1, 2, 3, 4, 5]\nlista_preencida_objetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\nllbb\nlista_vazia.append(1)\n",
             "lines": "12"
         }
     ]

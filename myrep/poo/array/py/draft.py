@@ -8,5 +8,5 @@ class Foo:
 lista_vazia: list[int] = []
 lista_preenchida: list[int] = [1, 2, 3, 4, 5]
 lista_preencida_objetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]
-
+llbb
 lista_vazia.append(1)
